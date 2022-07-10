@@ -29,7 +29,7 @@ function Home() {
                     }/>
                 </span> 
             </h1>
-            <Link className="search-link" to="/search">
+            <Link className="search-link" to="/main">
                 <div className="enter-button">
                     <p className="enter">Find Out</p>
                 </div>

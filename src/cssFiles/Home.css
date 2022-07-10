@@ -25,12 +25,15 @@
 }
 
 .enter-button {
-    background: rgb(255,255,255,.7);
+    background: rgba(255,255,255,.7);
     width: 140px;
     border-radius: 25px;
-    box-shadow: 1px 2px #574976;
     display: flex;
     justify-content: center;
+}
+
+.enter-button:hover {
+    background: #e1e0e2;
 }
 
 .enter {

@@ -1,8 +1,12 @@
 import '../cssFiles/HeadingSearch.css'
-import SearchForm from './SearchForm'
 import Typewriter from 'typewriter-effect'
+import { Link } from 'react-router-dom'
+import { SearchIcon } from './shared/SearchIcon'
+import '../cssFiles/SearchForm.css'
+import { useEffect } from 'react'
 
-function HeadingSearchStart() {
+function HeadingSearchStart({handleChange, handleSubmit, searchString, getWeatherData}) {
+
     return (
         <div className="headingSearch">
             <h1 className="heading">What to Wear 
@@ -29,7 +33,20 @@ function HeadingSearchStart() {
                     }/>
                 </span> 
             </h1>
-            <SearchForm />
+            <form className="searchForm" onSubmit={handleSubmit}>
+                <input 
+                    className="inputField" 
+                    type="text" 
+                    placeholder="Search for a city..."
+                    onChange={handleChange}
+                    value={searchString}
+                />
+                <Link to={`/main/${searchString}`}>
+                    <button className="searchButton" type="submit">
+                        <SearchIcon height="15px" width="30px" />
+                    </button>
+                </Link>
+            </form>
         </div>
     )
 }
