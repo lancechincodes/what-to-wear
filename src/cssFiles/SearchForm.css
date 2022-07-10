@@ -24,9 +24,12 @@
     border-radius: 25px;
     font-size: 15px;
     padding: 10px;
+    border: 1px solid black;
+    margin: 0 5px;
 }
 
 .searchButton {
     border-radius: 25px;
     padding: 10px;
+    border: 1px solid black;
 }
