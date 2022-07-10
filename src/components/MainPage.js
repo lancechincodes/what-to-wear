@@ -3,8 +3,7 @@ import HeadingSearch from './HeadingSearch'
 import WeatherInfo from './WeatherInfo'
 import { useEffect } from 'react'
 
-function MainPage({handleChange, handleSubmit, setSearchString, searchString, getWeatherData, city, temperature, condition, dateTime}) {
-    console.log(searchString)
+function MainPage({handleChange, handleSubmit, searchString, getWeatherData, city, temperature, condition, dateTime}) {    
     
     useEffect(() => {
         getWeatherData(searchString)
