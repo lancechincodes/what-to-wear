@@ -1,0 +1,38 @@
+.home-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 55px;
+    color: white;
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.search-link {
+    text-decoration: none;
+}
+
+.enter-button {
+    background: rgb(255,255,255,.7);
+    width: 200px;
+    border-radius: 25px;
+    box-shadow: 1px 2px #574976;
+    display: flex;
+    justify-content: center;
+}
+
+.enter {
+    font-size: 25px;
+    font-weight: 600;
+    margin: 5px;
+    text-decoration: none;
+    color: #574976;
+}
+
+
