@@ -4,14 +4,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .title {
-    font-size: 55px;
+    font-size: 40px;
     color: white;
-    font-weight: 800;
+    font-weight: 100;
     margin-top: 0;
     margin-bottom: 20px;
+}
+
+.inCity {
+    font-weight: 900;
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
 }
 
 .search-link {
@@ -28,7 +34,7 @@
 }
 
 .enter {
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 600;
     margin: 5px;
     text-decoration: none;

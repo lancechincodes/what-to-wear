@@ -12,8 +12,13 @@
     margin: 0px;;
 }
 
+.inputField::placeholder {
+    color: black;
+}
+
 .searchButton {
     border-radius: 25px;
     padding: 10px;
     border: 1px solid black;
+    background: white;
 }
