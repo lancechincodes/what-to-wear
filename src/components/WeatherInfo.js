@@ -2,9 +2,6 @@ import tshirt from '../images/t-shirt.svg'
 import '../cssFiles/WeatherInfo.css'
 
 function WeatherInfo({temperature, condition}) {
-    if (!temperature || !condition) {
-        return null
-    }
 
     return (
         <div className="weatherInfo">

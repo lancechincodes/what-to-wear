@@ -3,17 +3,16 @@ import HeadingSearch from './HeadingSearch'
 import WeatherInfo from './WeatherInfo'
 import { useEffect } from 'react'
 
-function MainPage({handleChange, handleSubmit, searchString, getWeatherData, city, temperature, condition, dateTime}) {
+function MainPage({handleChange, handleSubmit, setSearchString, searchString, getWeatherData, city, temperature, condition, dateTime}) {
     console.log(searchString)
     
     useEffect(() => {
         getWeatherData(searchString)
     },[])
     
-    if (!searchString) {
+    if (!city || !temperature || !condition || !dateTime) {
         return null
     }
-
     return (
         <div className="main-page">
             <DateTime dateTime={dateTime}/>
@@ -22,7 +21,7 @@ function MainPage({handleChange, handleSubmit, searchString, getWeatherData, cit
                 handleSubmit={handleSubmit}
                 searchString={searchString}
                 getWeatherData={getWeatherData}
-                city={city}                
+                city={city}            
             />
             <WeatherInfo 
                 temperature={temperature}

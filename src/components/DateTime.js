@@ -1,10 +1,11 @@
 import '../cssFiles/DateTime.css'
 
-function DateTime() {
+function DateTime({dateTime}) {
+ 
     return(
         <div className="dateTime">
-            <p className="time">9:00</p>
-            <p className="date">Saturday, July 9</p>
+            <p className="time">{dateTime}</p>
+            <p className="date">{dateTime}</p>
         </div>
     )
 }

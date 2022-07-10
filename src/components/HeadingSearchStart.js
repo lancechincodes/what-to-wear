@@ -35,13 +35,14 @@ function HeadingSearchStart({handleChange, handleSubmit, searchString, getWeathe
             </h1>
             <form className="searchForm" onSubmit={handleSubmit}>
                 <input 
+                    name="searchString"
                     className="inputField" 
                     type="text" 
                     placeholder="Search for a city..."
                     onChange={handleChange}
                     value={searchString}
                 />
-                <Link to={`/main/${searchString}`}>
+                <Link to={`/main/city`}>
                     <button className="searchButton" type="submit">
                         <SearchIcon height="15px" width="30px" />
                     </button>

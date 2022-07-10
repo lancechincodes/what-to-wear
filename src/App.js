@@ -1,9 +1,7 @@
 import './App.css';
-import { Routes, Route, Link, Navigate } from 'react-router-dom'
+import { Routes, Route, Link, Navigate} from 'react-router-dom'
 import Home from './components/Home'
-import SearchPage from './components/MainPageStart'
-import SearchPageDetails from './components/MainPage';
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
 import MainPage from './components/MainPage';
 import MainPageStart from './components/MainPageStart';
 
@@ -15,13 +13,14 @@ function App() {
   }
 
   const [searchString, setSearchString] = useState("")
+  // const [lastSearch , setLastSearch] = useState("")
   const [city, setCity] = useState("")
   const [temperature, setTemperature] = useState("")
   const [condition, setCondition] = useState("")
   const [dateTime, setDateTime] = useState("")
 
   function getWeatherData(searchString) {
-    const url = `${searchOptions.api}key=${searchOptions.key}&q=${searchString}&aqi=no`
+    const url = `${searchOptions.api}key=${searchOptions.key}&q=${searchString}}&aqi=no`
     fetch(url) 
       .then(res => res.json())
       .then(res => {
@@ -30,6 +29,8 @@ function App() {
         setTemperature(res.current.temp_f)
         setCondition(res.current.condition.text)
         setDateTime(res.current.last_updated)
+        // setLastSearch(searchString)
+        // setSearchString("")
       })
       .catch(error => console.log(error))
   }
@@ -37,6 +38,7 @@ function App() {
   function handleSubmit(event) {
     event.preventDefault()
     getWeatherData(searchString)
+    // setSearchString("")
   }
 
   function handleChange(event) {
@@ -68,7 +70,8 @@ function App() {
             city={city}
             temperature={temperature}
             condition={condition}
-            dateTime={condition}
+            dateTime={dateTime}
+            setSearchString={setSearchString}
           />}>
         </Route>
       </Routes>
