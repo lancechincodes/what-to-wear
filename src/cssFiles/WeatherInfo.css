@@ -14,6 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 }
 
 .temperature {
@@ -23,7 +24,7 @@
 }
 
 .condition {
-    font-size: 35px;
+    font-size: 30px;
     margin: 5px;
 
 }
