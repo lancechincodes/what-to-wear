@@ -4,9 +4,6 @@ import { SearchIcon } from './shared/SearchIcon'
 import '../cssFiles/SearchForm.css'
 
 function HeadingSearch({handleChange, handleSubmit, searchString, city}) {
-    // if (!city) {
-    //     return null
-    // }
 
     return (
         <div className="headingSearch">

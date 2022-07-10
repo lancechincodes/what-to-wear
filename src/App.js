@@ -30,7 +30,7 @@ function App() {
         setCondition(res.current.condition.text)
         setDateTime(res.current.last_updated)
         // setLastSearch(searchString)
-        // setSearchString("")
+        setSearchString("")
       })
       .catch(error => console.log(error))
   }
@@ -38,7 +38,6 @@ function App() {
   function handleSubmit(event) {
     event.preventDefault()
     getWeatherData(searchString)
-    // setSearchString("")
   }
 
   function handleChange(event) {
