@@ -5,7 +5,7 @@ import WeatherInfo from './WeatherInfo'
 function SearchPageDetails() {
     return (
         <div className="SearchPageDetails">
-            {/* <DateTime /> */}
+            <DateTime />
             <SearchForm />
             <WeatherInfo />
         </div>

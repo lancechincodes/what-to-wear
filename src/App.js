@@ -7,7 +7,7 @@ import SearchPageDetails from './components/SearchPageDetails';
 
 function App() {
   return (
-    <main>
+    <main className="main-app">
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/search" element={<SearchPage />}></Route>
