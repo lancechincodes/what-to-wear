@@ -1,13 +1,13 @@
 // import '../cssFiles/SearchPage.css'
 import DateTimeStart from './DateTimeStart'
-import SearchForm from './SearchForm'
+import HeadingSearchStart from './HeadingSearchStart'
 import WeatherInfoStart from './WeatherInfoStart'
 
 function SearchPage() {
     return (
         <div className="search-page">
             <DateTimeStart />
-            <SearchForm />
+            <HeadingSearchStart />
             <WeatherInfoStart />
         </div>
     )

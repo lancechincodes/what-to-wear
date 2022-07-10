@@ -1,12 +1,12 @@
 import DateTime from './DateTime'
-import SearchForm from './SearchForm'
+import HeadingSearch from './HeadingSearch'
 import WeatherInfo from './WeatherInfo'
 
 function SearchPageDetails() {
     return (
         <div className="SearchPageDetails">
             <DateTime />
-            <SearchForm />
+            <HeadingSearch />
             <WeatherInfo />
         </div>
     )

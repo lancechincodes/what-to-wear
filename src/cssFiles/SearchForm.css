@@ -1,31 +1,10 @@
-.form {
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.heading {
-    text-align: center;
-    font-size: 40px;
-    width: 250px;
-    color: white;
-    font-weight: 100;
-}
-
-.inCity {
-    font-weight: 900;
-    text-shadow: 0px 1px, 1px 0px, 1px 1px;
-}
-
 .inputField {
     width: 200px;
     border-radius: 25px;
     font-size: 15px;
     padding: 10px;
     border: 1px solid black;
-    margin: 0 5px;
+    margin: 0;
 }
 
 .searchButton {

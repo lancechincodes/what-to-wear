@@ -1,0 +1,21 @@
+.headingSearch {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    text-align: center;
+    font-size: 35px;
+    width: 280px;
+    color: white;
+    font-weight: 100;
+}
+
+.inCity {
+    font-weight: 900;
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+}
+

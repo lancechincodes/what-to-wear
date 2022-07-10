@@ -16,7 +16,7 @@ function WeatherInfo() {
             setCurrentClothingItem(clothes[Math.floor(Math.random() * clothes.length)])
         }, 2000)
 
-        // cleanup function
+        // cleanup function to stop the interval
         return () => clearInterval(clothesInterval)
         }, [])
    
@@ -24,7 +24,6 @@ function WeatherInfo() {
         <div className="weatherInfo">
             <div className="box tempCondition">
                 <h1 className="temperature">? ˚F</h1>
-                <h2 className="condition">Condition</h2>
             </div>
             <div className="box clothingIcon">
                 {!currentClothingItem 
