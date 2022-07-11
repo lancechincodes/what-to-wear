@@ -1,18 +1,30 @@
 import './App.css';
 import { Routes, Route, Link, Navigate} from 'react-router-dom'
-import { useState} from 'react'
+import { useState } from 'react'
 import Home from './components/Home'
 import MainPage from './components/MainPage';
 import MainPageStart from './components/MainPageStart';
 
+import { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+
 function App() {
+  // Navigate to main page on reload
+  const location = useLocation();
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (location.pathname === "/main/city") {
+      navigate("/main");
+    }
+  }, []);
+
+
   const searchOptions = {
     key: process.env.REACT_APP_WEATHER_KEY,
     api: "http://api.weatherapi.com/v1/current.json?"
   }
 
   const [searchString, setSearchString] = useState("")
-  // const [lastSearch , setLastSearch] = useState("")
   const [city, setCity] = useState("")
   const [temperature, setTemperature] = useState("")
   const [condition, setCondition] = useState("")
@@ -20,11 +32,11 @@ function App() {
   const [dateTime, setDateTime] = useState("")
 
   function getWeatherData(searchString) {
-    const url = `${searchOptions.api}key=${searchOptions.key}&q=${searchString}}&aqi=no`
+    const url = `${searchOptions.api}key=${searchOptions.key}&q=${searchString}&aqi=no`
     fetch(url) 
       .then(res => res.json())
       .then(res => {
-        console.log(res)
+        // console.log(res)
         setCity(res.location.name)
         setTemperature(res.current.temp_f)
         setCondition(res.current.condition.text)
