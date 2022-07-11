@@ -5,9 +5,10 @@ import hoodie from '../images/hoodie.svg'
 import raincoat from '../images/raincoat.svg'
 import '../cssFiles/WeatherInfo.css'
 
-function WeatherInfo({temperature, condition}) {
+function WeatherInfo({temperature, condition, conditionIcon}) {
 
     function displayClothesRecommendation() {
+        condition = condition.toLowerCase()
         if (condition.includes("rain") || condition.includes("mist") || condition.includes("storm")) {
             return <img className="clothesImg" src={raincoat} alt="Raincoat icon"></img>
         }
@@ -32,6 +33,7 @@ function WeatherInfo({temperature, condition}) {
             <div className="box tempCondition">
                 <h1 className="temperature">{temperature}˚F</h1>
                 <h2 className="condition">{condition}</h2>
+                <img className="condition-icon"src={conditionIcon} alt="Weather condition icon"/>
             </div>
             <div className="box clothingIcon">
                 {displayClothesRecommendation()}

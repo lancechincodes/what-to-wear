@@ -3,7 +3,7 @@ import HeadingSearch from './HeadingSearch'
 import WeatherInfo from './WeatherInfo'
 import { useEffect } from 'react'
 
-function MainPage({handleChange, handleSubmit, searchString, getWeatherData, city, temperature, condition, dateTime}) {    
+function MainPage({handleChange, handleSubmit, searchString, getWeatherData, city, temperature, condition, dateTime, conditionIcon}) {    
     
     useEffect(() => {
         getWeatherData(searchString)
@@ -25,6 +25,7 @@ function MainPage({handleChange, handleSubmit, searchString, getWeatherData, cit
             <WeatherInfo 
                 temperature={temperature}
                 condition={condition}
+                conditionIcon={conditionIcon}
             />
         </div>
     )

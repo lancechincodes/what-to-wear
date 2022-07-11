@@ -1,10 +1,9 @@
 import './App.css';
 import { Routes, Route, Link, Navigate} from 'react-router-dom'
-import Home from './components/Home'
 import { useState} from 'react'
+import Home from './components/Home'
 import MainPage from './components/MainPage';
 import MainPageStart from './components/MainPageStart';
-
 
 function App() {
   const searchOptions = {
@@ -17,6 +16,7 @@ function App() {
   const [city, setCity] = useState("")
   const [temperature, setTemperature] = useState("")
   const [condition, setCondition] = useState("")
+  const [conditionIcon, setConditionIcon] = useState("")
   const [dateTime, setDateTime] = useState("")
 
   function getWeatherData(searchString) {
@@ -28,8 +28,8 @@ function App() {
         setCity(res.location.name)
         setTemperature(res.current.temp_f)
         setCondition(res.current.condition.text)
+        setConditionIcon(res.current.condition.icon)
         setDateTime(res.current.last_updated)
-        // setLastSearch(searchString)
         setSearchString("")
       })
       .catch(error => console.log(error))
@@ -52,25 +52,26 @@ function App() {
           element={<MainPageStart 
             handleChange={handleChange}
             handleSubmit={handleSubmit}
-            searchString={searchString}
             getWeatherData={getWeatherData}
+            searchString={searchString}
             city={city}
             temperature={temperature}
             condition={condition}
             dateTime={condition}
+            conditionIcon={conditionIcon}
           />}>
         </Route>
-        <Route path="/main/:city" 
+        <Route path="/main/city" 
           element={<MainPage 
             handleChange={handleChange}
             handleSubmit={handleSubmit}
-            searchString={searchString}
             getWeatherData={getWeatherData}
+            searchString={searchString}
             city={city}
             temperature={temperature}
             condition={condition}
             dateTime={dateTime}
-            setSearchString={setSearchString}
+            conditionIcon={conditionIcon}
           />}>
         </Route>
       </Routes>

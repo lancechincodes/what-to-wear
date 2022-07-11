@@ -23,7 +23,7 @@ function DateTime({dateTime}) {
     }
     return(
         <div className="dateTime">
-            <p className="updated">Last updated (local time)</p>
+            <p className="updated">Last updated local time</p>
             <p className="time">{time}</p>
             <p className="date">{month} {day}, {year} </p>
         </div>
