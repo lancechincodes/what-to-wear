@@ -12,7 +12,7 @@ function DateTime({dateTime}) {
 
     // convert time to hours and minutes (AM/PM)
     let time = dateAndTime[1].split(":")
-    const minute = Number(time[1])
+    const minute = time[1]
     let hour = Number(time[0])
     if (hour > 12) {
         hour -= 12
