@@ -4,7 +4,6 @@ import { useState } from 'react'
 import Home from './components/Home'
 import MainPage from './components/MainPage';
 import MainPageStart from './components/MainPageStart';
-
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -14,7 +13,7 @@ function App() {
   const navigate = useNavigate();
   useEffect(() => {
     if (location.pathname === "/main/city") {
-      navigate("/main");
+      navigate("/");
     }
   }, []);
 
