@@ -1,3 +1,4 @@
+/*Tier 2 (Phones)*/
 .searchForm {
     display: flex;
     align-items: center;
@@ -21,4 +22,12 @@
     padding: 10px;
     border: 1px solid black;
     background: white;
+}
+
+/*Tier 1 (Small phones)*/
+@media screen and (max-width: 380px) {
+    .inputField {
+        width: 180px;
+        font-size: 14px;
+    }
 }

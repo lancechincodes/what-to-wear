@@ -1,3 +1,4 @@
+/*Tier 2 (Phones)*/
 .home-page {
     height: 100vh;
     display: flex;
@@ -44,4 +45,18 @@
     color: #574976;
 }
 
+/*Tier 1 (Small phones)*/
+@media screen and (max-width: 380px) {
+    .title {
+        font-size: 35px;
+    }
+
+    .enter-button {
+        width: 130px;
+    }
+
+    .enter {
+        font-size: 20px;
+    }
+}
 

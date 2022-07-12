@@ -1,3 +1,4 @@
+/*Tier 2 (Phones)*/
 .weatherInfo{
     display: grid;
     grid-template-columns: (1, 200px);
@@ -38,4 +39,28 @@
 .clothesImg {
     width: 175px;
     height: auto;
+}
+
+/*Tier 1 (Small phones)*/
+@media screen and (max-width: 380px) {
+    .weatherInfo {
+        grid-template-columns: (1, 150px);
+        grid-template-rows: repeat(2, 150px);
+    }
+
+    .temperature {
+        font-size: 45px;
+    }
+
+    .condition {
+        font-size: 22px;
+    }
+
+    .condition-icon {
+        width: 40px;
+    }
+
+    .clothesImg {
+        width: 130px;
+    }
 }

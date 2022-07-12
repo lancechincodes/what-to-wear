@@ -1,3 +1,4 @@
+/*Tier 2 (Phones)*/
 .dateTime {
     display: flex;
     flex-direction: column;
@@ -23,4 +24,19 @@
     font-size: 20px;
     margin: 0px;
     color: white;
+}
+
+/*Tier 1 (Small phones)*/
+@media screen and (max-width: 380px) {
+    .updated {
+        font-size: 12px;
+    }
+
+    .time {
+        font-size: 40px;
+    }
+
+    .date {
+        font-size: 18px;
+    }
 }

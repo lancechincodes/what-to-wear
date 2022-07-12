@@ -14,7 +14,11 @@ function DateTime({dateTime}) {
     let time = dateAndTime[1].split(":")
     const minute = time[1]
     let hour = Number(time[0])
-    if (hour > 12) {
+    if (hour === 0) {
+        hour += 12
+        time = `${hour}:${minute} AM`
+    }
+    else if (hour > 12) {
         hour -= 12
         time = `${hour}:${minute} PM`
     }
