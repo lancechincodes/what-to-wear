@@ -88,3 +88,29 @@
         width: 160px;
     }
 }
+
+/*Tier 4 (Tablets)*/
+@media screen and (min-width: 700px) and (max-width: 960px) {
+    .weatherInfo {
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(1, 300px);
+        justify-content: center;
+    }
+
+    .temperature {
+        font-size: 80px;
+    }
+
+    .condition {
+        font-size: 35px;
+    }
+
+    .condition-icon {
+        width: 100px;
+    }
+
+    .clothesImg {
+        width: 250px;
+    }
+
+}
