@@ -60,3 +60,18 @@
     }
 }
 
+/*Tier 3 (Small tablets)*/
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .title {
+        font-size: 60px;
+    }
+
+    .enter-button {
+        width: 180px;
+    }
+
+    .enter {
+        font-size: 30px;
+    }
+}
+

@@ -30,3 +30,14 @@
         font-size: 30px;
     }
 }
+
+/*Tier 3 (Small tablets)*/
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .headingSearch {
+        height: 220px;
+    }
+    .heading {
+        font-size: 40px;
+        width: 350px;
+    }
+}

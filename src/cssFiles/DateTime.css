@@ -40,3 +40,18 @@
         font-size: 18px;
     }
 }
+
+/*Tier 3 (Small tablets)*/
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .updated {
+        font-size: 18px;
+    }
+
+    .time {
+        font-size: 60px;
+    }
+
+    .date {
+        font-size: 22px;
+    }
+}

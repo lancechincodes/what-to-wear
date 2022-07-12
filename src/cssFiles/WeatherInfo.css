@@ -25,7 +25,7 @@
 }
 
 .condition {
-    font-size: 25px;
+    font-size: 24px;
     margin: 5px;
     text-align: center;
     width: 75%;
@@ -62,5 +62,29 @@
 
     .clothesImg {
         width: 130px;
+    }
+}
+
+/*Tier 3 (Tablets)*/
+@media screen and (min-width: 500px) and (max-width: 700px) {
+    .weatherInfo {
+        grid-template-columns: (1, 150px);
+        grid-template-rows: repeat(2, 200px);
+    }
+
+    .temperature {
+        font-size: 55px;
+    }
+
+    .condition {
+        font-size: 26px;
+    }
+
+    .condition-icon {
+        width: 50px;
+    }
+
+    .clothesImg {
+        width: 160px;
     }
 }

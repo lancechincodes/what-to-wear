@@ -31,3 +31,11 @@
         font-size: 14px;
     }
 }
+
+/*Tier 3 (Tablets)*/
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .inputField {
+        width: 200px;
+        font-size: 18px;
+    }
+}
