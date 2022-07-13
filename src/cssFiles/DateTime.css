@@ -44,7 +44,7 @@
 /*Tier 3 (Small tablets)*/
 @media screen and (min-width: 500px) and (max-width: 700px) {
     .updated {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .time {
@@ -52,7 +52,7 @@
     }
 
     .date {
-        font-size: 22px;
+        font-size: 30px;
     }
 }
 

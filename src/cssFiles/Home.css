@@ -67,11 +67,12 @@
     }
 
     .enter-button {
-        width: 180px;
+        width: 130px;
+        margin: 20px 0px;
     }
 
     .enter {
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 
@@ -84,7 +85,6 @@
     .enter-button {
         width: 150px;
         margin: 20px 0px;
-
     }
 
     .enter {

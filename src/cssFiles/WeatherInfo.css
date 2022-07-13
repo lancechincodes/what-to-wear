@@ -71,7 +71,7 @@
     }
 }
 
-/*Tier 3 (Tablets)*/
+/*Tier 3 (Small tablets)*/
 @media screen and (min-width: 500px) and (max-width: 700px) {
     .weatherInfo {
         grid-template-columns: (1, 150px);
@@ -79,7 +79,7 @@
     }
 
     .temperature {
-        font-size: 55px;
+        font-size: 47px;
     }
 
     .condition {
@@ -87,7 +87,7 @@
     }
 
     .condition-icon {
-        width: 50px;
+        width: 55px;
     }
 
     .clothesImg {
