@@ -9,13 +9,19 @@
 }
 
 .box {
-    background: rgba(255,255,255, .5);
+    background: rgba(255,255,255, .6);
     border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
+}
+
+.tempCondition {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .temperature {
@@ -98,7 +104,7 @@
     }
 
     .temperature {
-        font-size: 80px;
+        font-size: 60px;
     }
 
     .condition {
@@ -120,12 +126,6 @@
         grid-template-columns: repeat(2, 330px);
         grid-template-rows: repeat(1, 210px);
         justify-content: center;
-    }
-
-    .tempCondition {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
     }
 
     .temperature {
@@ -151,12 +151,6 @@
         grid-template-columns: repeat(2, 350px);
         grid-template-rows: repeat(1, 220px);
         justify-content: center;
-    }
-
-    .tempCondition {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
     }
 
     .temperature {

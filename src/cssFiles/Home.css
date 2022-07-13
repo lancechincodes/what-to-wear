@@ -78,17 +78,17 @@
 /*Tier 4 (Tablets)*/
 @media screen and (min-width: 700px) and (max-width: 960px) {
     .title {
-        font-size: 80px;
+        font-size: 65px;
     }
 
     .enter-button {
-        width: 250px;
+        width: 150px;
         margin: 20px 0px;
 
     }
 
     .enter {
-        font-size: 35px;
+        font-size: 22px;
     }
 }
 
