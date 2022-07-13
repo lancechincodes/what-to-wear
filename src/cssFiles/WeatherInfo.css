@@ -123,7 +123,7 @@
 /*Tier 5 (Small laptop)*/
 @media screen and (min-width: 960px) and (max-width: 1280px) {
     .weatherInfo {
-        grid-template-columns: repeat(2, 330px);
+        grid-template-columns: repeat(2, 300px);
         grid-template-rows: repeat(1, 210px);
         justify-content: center;
     }
@@ -148,7 +148,7 @@
 /*Tier 6 (Laptop)*/
 @media screen and (min-width: 1280px) {
     .weatherInfo {
-        grid-template-columns: repeat(2, 350px);
+        grid-template-columns: repeat(2, 310px);
         grid-template-rows: repeat(1, 220px);
         justify-content: center;
     }
