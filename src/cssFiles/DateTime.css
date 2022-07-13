@@ -70,3 +70,33 @@
         font-size: 40px;
     }
 }
+
+/*Tier 5 (Small laptop)*/
+@media screen and (min-width: 960px) and (max-width: 1280px) {
+    .updated {
+        font-size: 35px;
+    }
+
+    .time {
+        font-size: 100px;
+    }
+
+    .date {
+        font-size: 50px;
+    }
+}
+
+/*Tier 6 (Laptop)*/
+@media screen and (min-width: 1280px) {
+    .updated {
+        font-size: 20px;
+    }
+
+    .time {
+        font-size: 60px;
+    }
+
+    .date {
+        font-size: 30px;
+    }
+}

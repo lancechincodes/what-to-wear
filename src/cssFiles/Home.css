@@ -83,9 +83,43 @@
 
     .enter-button {
         width: 250px;
+        margin: 20px 0px;
+
     }
 
     .enter {
         font-size: 35px;
+    }
+}
+
+/*Tier 5 (Small laptop)*/
+@media screen and (min-width: 960px) and (max-width: 1280px) {
+    .title {
+        font-size: 90px;
+    }
+
+    .enter-button {
+        width: 250px;
+        margin: 50px 0px;
+    }
+
+    .enter {
+        font-size: 40px;
+    }
+}
+
+/*Tier 6 (Laptop)*/
+@media screen and (min-width: 1280px) {
+    .title {
+        font-size: 75px;
+    }
+
+    .enter-button {
+        width: 200px;
+        margin: 30px 0px;
+    }
+
+    .enter {
+        font-size: 30px;
     }
 }

@@ -5,7 +5,7 @@ function MainPageStart({handleChange, handleSubmit, searchString, getWeatherData
     
     return (
         <div className="main-page">
-            <HeadingSearchStart 
+=            <HeadingSearchStart 
                 handleChange={handleChange}
                 handleSubmit={handleSubmit}
                 searchString={searchString}

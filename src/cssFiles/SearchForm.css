@@ -43,7 +43,34 @@
 /*Tier 4 (Tablets)*/
 @media screen and (min-width: 700px) and (max-width: 960px) {
     .inputField {
-        width: 350px;
-        font-size: 27px;
+        width: 310px;
+        font-size: 22px;
+        padding: 15px;
+    }
+}
+
+/*Tier 5 (Small laptop)*/
+@media screen and (min-width: 960px) and (max-width: 1280px) {
+    .inputField {
+        width: 550px;
+        font-size: 34px;
+        padding: 15px;
+    }
+}
+
+/*Tier 6 (Laptop)*/
+@media screen and (min-width: 1280px) {
+    form {
+        margin: 15px;
+    }
+
+    .inputField {
+        width: 400px;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .searchButton {
+        width: 55px;
+        height: 45px;
     }
 }

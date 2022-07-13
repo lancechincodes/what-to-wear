@@ -112,5 +112,60 @@
     .clothesImg {
         width: 250px;
     }
+}
 
+/*Tier 5 (Small laptop)*/
+@media screen and (min-width: 960px) and (max-width: 1280px) {
+    .weatherInfo {
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: repeat(1, 350px);
+        justify-content: center;
+    }
+
+    .temperature {
+        font-size: 100px;
+    }
+
+    .condition {
+        font-size: 35px;
+    }
+
+    .condition-icon {
+        width: 120px;
+    }
+
+    .clothesImg {
+        width: 280px;
+    }
+}
+
+/*Tier 6 (Laptop)*/
+@media screen and (min-width: 1280px) {
+    .weatherInfo {
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: repeat(1, 220px);
+        justify-content: center;
+    }
+
+    .tempCondition {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .temperature {
+        font-size: 50px;
+    }
+
+    .condition {
+        font-size: 30px;
+    }
+
+    .condition-icon {
+        width: 60px;
+    }
+
+    .clothesImg {
+        width: 200px;
+    }
 }

@@ -7,7 +7,7 @@ function HeadingSearch({handleChange, handleSubmit, searchString, city}) {
 
     return (
         <div className="headingSearch">
-            <h1 className="heading">What to Wear <br/><span className="inCity">in {city}</span></h1>
+            <h1 className="heading">What to Wear <br/> <span className="inCity">in {city}</span></h1>
             <form className="searchForm" onSubmit={handleSubmit}>
                 <input 
                     name="searchString"
@@ -17,11 +17,9 @@ function HeadingSearch({handleChange, handleSubmit, searchString, city}) {
                     onChange={handleChange}
                     value={searchString}
                 />
-                {/* <Link to={`/main/city`}> */}
                 <button className="searchButton" type="submit">
                     <SearchIcon height="15px" width="30px" />
                 </button>
-                {/* </Link> */}
             </form>
         </div>
     )
