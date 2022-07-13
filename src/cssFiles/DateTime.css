@@ -74,15 +74,15 @@
 /*Tier 5 (Small laptop)*/
 @media screen and (min-width: 960px) and (max-width: 1280px) {
     .updated {
-        font-size: 35px;
+        font-size: 17px;
     }
 
     .time {
-        font-size: 100px;
+        font-size: 57px;
     }
 
     .date {
-        font-size: 50px;
+        font-size: 27px;
     }
 }
 

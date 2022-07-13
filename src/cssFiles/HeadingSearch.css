@@ -60,15 +60,12 @@
 /*Tier 5 (Small laptop)*/
 @media screen and (min-width: 960px) and (max-width: 1280px) {
     .headingSearch {
-        height: 500px;
+        margin: 25px;
     }
     .heading {
-        font-size: 100px;
+        font-size: 55px;
         width: 800px;
-    }
-    .searchButton {
-        width: 90px;
-        height: 70px;
+        margin: 15px;
     }
 }
 

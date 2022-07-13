@@ -95,16 +95,16 @@
 /*Tier 5 (Small laptop)*/
 @media screen and (min-width: 960px) and (max-width: 1280px) {
     .title {
-        font-size: 90px;
+        font-size: 70px;
     }
 
     .enter-button {
-        width: 250px;
-        margin: 50px 0px;
+        width: 180px;
+        margin: 20px 0px;
     }
 
     .enter {
-        font-size: 40px;
+        font-size: 25px;
     }
 }
 
