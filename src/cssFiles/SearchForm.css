@@ -24,6 +24,12 @@
     background: white;
 }
 
+.searchButton:hover {
+    background: #e1e0e2;
+    cursor: pointer;
+    
+}
+
 /*Tier 1 (Small phones)*/
 @media screen and (max-width: 380px) {
     .inputField {

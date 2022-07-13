@@ -18,6 +18,10 @@
     border: 1px solid black;
 }
 
+.box:hover {
+    background: white;
+}
+
 .tempCondition {
     display: flex;
     flex-direction: column;
