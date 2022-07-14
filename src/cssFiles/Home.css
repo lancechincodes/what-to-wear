@@ -1,0 +1,125 @@
+/*Tier 2 (Phones)*/
+.home-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    font-size: 40px;
+    color: white;
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.inCity {
+    font-weight: 900;
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+}
+
+.search-link {
+    text-decoration: none;
+}
+
+.enter-button {
+    background: rgba(255,255,255,.7);
+    width: 140px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.enter-button:hover {
+    background: #e1e0e2;
+}
+
+.enter {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 5px;
+    text-decoration: none;
+    color: #574976;
+}
+
+/*Tier 1 (Small phones)*/
+@media screen and (max-width: 380px) {
+    .title {
+        font-size: 35px;
+    }
+
+    .enter-button {
+        width: 130px;
+    }
+
+    .enter {
+        font-size: 20px;
+    }
+}
+
+/*Tier 3 (Small tablets)*/
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .title {
+        font-size: 60px;
+    }
+
+    .enter-button {
+        width: 130px;
+        margin: 20px 0px;
+    }
+
+    .enter {
+        font-size: 20px;
+    }
+}
+
+/*Tier 4 (Tablets)*/
+@media screen and (min-width: 700px) and (max-width: 960px) {
+    .title {
+        font-size: 65px;
+    }
+
+    .enter-button {
+        width: 150px;
+        margin: 20px 0px;
+    }
+
+    .enter {
+        font-size: 22px;
+    }
+}
+
+/*Tier 5 (Small laptop)*/
+@media screen and (min-width: 960px) and (max-width: 1280px) {
+    .title {
+        font-size: 70px;
+    }
+
+    .enter-button {
+        width: 180px;
+        margin: 20px 0px;
+    }
+
+    .enter {
+        font-size: 25px;
+    }
+}
+
+/*Tier 6 (Laptop)*/
+@media screen and (min-width: 1280px) {
+    .title {
+        font-size: 75px;
+    }
+
+    .enter-button {
+        width: 200px;
+        margin: 30px 0px;
+    }
+
+    .enter {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,102 @@
+/*Tier 2 (Phones)*/
+.dateTime {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.updated {
+    color: white;
+    margin: 0px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.time {
+    margin: 5px;
+    font-size: 50px;
+    color: white;
+}
+
+.date {
+    font-size: 20px;
+    margin: 0px;
+    color: white;
+}
+
+/*Tier 1 (Small phones)*/
+@media screen and (max-width: 380px) {
+    .updated {
+        font-size: 12px;
+    }
+
+    .time {
+        font-size: 40px;
+    }
+
+    .date {
+        font-size: 18px;
+    }
+}
+
+/*Tier 3 (Small tablets)*/
+@media screen and (min-width: 500px) and (max-width: 700px) {
+    .updated {
+        font-size: 24px;
+    }
+
+    .time {
+        font-size: 60px;
+    }
+
+    .date {
+        font-size: 30px;
+    }
+}
+
+/*Tier 4 (Tablets)*/
+@media screen and (min-width: 700px) and (max-width: 960px) {
+    .updated {
+        font-size: 30px;
+    }
+
+    .time {
+        font-size: 80px;
+    }
+
+    .date {
+        font-size: 40px;
+    }
+}
+
+/*Tier 5 (Small laptop)*/
+@media screen and (min-width: 960px) and (max-width: 1280px) {
+    .updated {
+        font-size: 17px;
+    }
+
+    .time {
+        font-size: 57px;
+    }
+
+    .date {
+        font-size: 27px;
+    }
+}
+
+/*Tier 6 (Laptop)*/
+@media screen and (min-width: 1280px) {
+    .updated {
+        font-size: 20px;
+    }
+
+    .time {
+        font-size: 60px;
+    }
+
+    .date {
+        font-size: 30px;
+    }
+}

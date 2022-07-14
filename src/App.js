@@ -1,24 +1,92 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route, Link, Navigate} from 'react-router-dom'
+import { useState } from 'react'
+import Home from './components/Home'
+import MainPage from './components/MainPage';
+import MainPageStart from './components/MainPageStart';
+import { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function App() {
+  // Navigate to main page on reload
+  const location = useLocation();
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (location.pathname === "/main/city") {
+      navigate("/");
+    }
+  }, []);
+
+
+  const searchOptions = {
+    key: process.env.REACT_APP_WEATHER_KEY,
+    api: "http://api.weatherapi.com/v1/current.json?"
+  }
+
+  const [searchString, setSearchString] = useState("")
+  const [city, setCity] = useState("")
+  const [temperature, setTemperature] = useState("")
+  const [condition, setCondition] = useState("")
+  const [conditionIcon, setConditionIcon] = useState("")
+  const [dateTime, setDateTime] = useState("")
+
+  function getWeatherData(searchString) {
+    const url = `${searchOptions.api}key=${searchOptions.key}&q=${searchString}&aqi=no`
+    fetch(url) 
+      .then(res => res.json())
+      .then(res => {
+        // console.log(res)
+        setCity(res.location.name)
+        setTemperature(res.current.temp_f)
+        setCondition(res.current.condition.text)
+        setConditionIcon(res.current.condition.icon)
+        setDateTime(res.current.last_updated)
+        setSearchString("")
+      })
+      .catch(error => console.log(error))
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault()
+    getWeatherData(searchString)
+  }
+
+  function handleChange(event) {
+    setSearchString(event.target.value)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="main-app">
+      <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/main" 
+          element={<MainPageStart 
+            handleChange={handleChange}
+            handleSubmit={handleSubmit}
+            getWeatherData={getWeatherData}
+            searchString={searchString}
+            city={city}
+            temperature={temperature}
+            condition={condition}
+            dateTime={condition}
+            conditionIcon={conditionIcon}
+          />}>
+        </Route>
+        <Route path="/main/city" 
+          element={<MainPage 
+            handleChange={handleChange}
+            handleSubmit={handleSubmit}
+            getWeatherData={getWeatherData}
+            searchString={searchString}
+            city={city}
+            temperature={temperature}
+            condition={condition}
+            dateTime={dateTime}
+            conditionIcon={conditionIcon}
+          />}>
+        </Route>
+      </Routes>
+    </main>
   );
 }
 

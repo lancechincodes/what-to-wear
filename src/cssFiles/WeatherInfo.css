@@ -1,0 +1,175 @@
+/*Tier 2 (Phones)*/
+.weatherInfo{
+    display: grid;
+    grid-template-columns: (1, 200px);
+    grid-template-rows: repeat(2, 200px);
+    gap: 20px;
+    width: 75%;
+    margin: 20px auto;
+}
+
+.box {
+    background: rgba(255,255,255, .6);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.box:hover {
+    background: white;
+}
+
+.tempCondition {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.temperature {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.condition {
+    font-size: 24px;
+    margin: 5px;
+    text-align: center;
+    width: 75%;
+}
+
+.condition-icon {
+    width: 50px;
+}
+
+
+.clothesImg {
+    width: 175px;
+    height: auto;
+}
+
+/*Tier 1 (Small phones)*/
+@media screen and (max-width: 380px) {
+    .weatherInfo {
+        grid-template-columns: (1, 150px);
+        grid-template-rows: repeat(2, 150px);
+    }
+
+    .temperature {
+        font-size: 45px;
+    }
+
+    .condition {
+        font-size: 22px;
+    }
+
+    .condition-icon {
+        width: 40px;
+    }
+
+    .clothesImg {
+        width: 130px;
+    }
+}
+
+/*Tier 3 (Small tablets)*/
+@media screen and (min-width: 500px) and (max-width: 700px) {
+    .weatherInfo {
+        grid-template-columns: (1, 150px);
+        grid-template-rows: repeat(2, 200px);
+    }
+
+    .temperature {
+        font-size: 47px;
+    }
+
+    .condition {
+        font-size: 26px;
+    }
+
+    .condition-icon {
+        width: 55px;
+    }
+
+    .clothesImg {
+        width: 160px;
+    }
+}
+
+/*Tier 4 (Tablets)*/
+@media screen and (min-width: 700px) and (max-width: 960px) {
+    .weatherInfo {
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(1, 300px);
+        justify-content: center;
+    }
+
+    .temperature {
+        font-size: 60px;
+    }
+
+    .condition {
+        font-size: 35px;
+    }
+
+    .condition-icon {
+        width: 100px;
+    }
+
+    .clothesImg {
+        width: 250px;
+    }
+}
+
+/*Tier 5 (Small laptop)*/
+@media screen and (min-width: 960px) and (max-width: 1280px) {
+    .weatherInfo {
+        grid-template-columns: repeat(2, 300px);
+        grid-template-rows: repeat(1, 210px);
+        justify-content: center;
+    }
+
+    .temperature {
+        font-size: 46px;
+    }
+
+    .condition {
+        font-size: 26px;
+    }
+
+    .condition-icon {
+        width: 55px;
+    }
+
+    .clothesImg {
+        width: 180px;
+    }
+}
+
+/*Tier 6 (Laptop)*/
+@media screen and (min-width: 1280px) {
+    .weatherInfo {
+        grid-template-columns: repeat(2, 310px);
+        grid-template-rows: repeat(1, 220px);
+        justify-content: center;
+    }
+
+    .temperature {
+        font-size: 50px;
+    }
+
+    .condition {
+        font-size: 30px;
+    }
+
+    .condition-icon {
+        width: 60px;
+    }
+
+    .clothesImg {
+        width: 200px;
+    }
+}

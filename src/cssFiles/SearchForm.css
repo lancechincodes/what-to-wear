@@ -1,0 +1,94 @@
+/*Tier 2 (Phones)*/
+.searchForm {
+    display: flex;
+    align-items: center;
+}
+
+.inputField {
+    width: 200px;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid black;
+    margin: 0px;;
+}
+
+.inputField::placeholder {
+    color: black;
+}
+
+.searchButton {
+    border-radius: 25px;
+    padding: 10px;
+    border: 1px solid black;
+    background: white;
+}
+
+.searchButton:hover {
+    background: #e1e0e2;
+    cursor: pointer;
+    
+}
+
+/*Tier 1 (Small phones)*/
+@media screen and (max-width: 380px) {
+    .inputField {
+        width: 180px;
+        font-size: 14px;
+    }
+}
+
+/*Tier 3 (Small tablets)*/
+@media screen and (min-width: 500px) and (max-width: 700px) {
+    .inputField {
+        width: 270px;
+        font-size: 18px;
+    }
+}
+
+/*Tier 4 (Tablets)*/
+@media screen and (min-width: 700px) and (max-width: 960px) {
+    .inputField {
+        width: 310px;
+        font-size: 22px;
+        padding: 15px;
+    }
+    .searchButton {
+        width: 70px;
+        height: 55px;
+    }
+}
+
+/*Tier 5 (Small laptop)*/
+@media screen and (min-width: 960px) and (max-width: 1280px) {
+    form {
+        margin: 12px;
+    }
+
+    .inputField {
+        width: 380px;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .searchButton {
+        width: 50px;
+        height: 42px;
+    }
+}
+
+/*Tier 6 (Laptop)*/
+@media screen and (min-width: 1280px) {
+    form {
+        margin: 15px;
+    }
+
+    .inputField {
+        width: 400px;
+        font-size: 20px;
+        padding: 10px;
+    }
+    .searchButton {
+        width: 55px;
+        height: 45px;
+    }
+}

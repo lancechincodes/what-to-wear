@@ -1,0 +1,85 @@
+/*Tier 2 (Phones)*/
+.headingSearch {
+    /* height: 200px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading {
+    text-align: center;
+    font-size: 35px;
+    width: 270px;
+    color: white;
+    font-weight: 100;
+}
+
+.inCity {
+    font-weight: 900;
+    text-shadow: 0px 1px, 1px 0px, 1px 1px;
+}
+
+/*Tier 1 (Small phones)*/
+@media screen and (max-width: 380px) {
+    .headingSearch {
+        height: 150px;
+    }
+
+    .heading {
+        font-size: 30px;
+    }
+}
+
+/*Tier 3 (Small tablets)*/
+@media screen and (min-width: 500px) and (max-width: 700px) {
+    .headingSearch {
+        margin: 30px;
+    }
+    .heading {
+        font-size: 40px;
+        width: 350px;
+        margin-top: 0px;
+    }
+}
+
+/*Tier 4 (Tablets)*/
+@media screen and (min-width: 700px) and (max-width: 960px) {
+    .headingSearch {
+        margin: 70px;
+    }
+    .heading {
+        font-size: 70px;
+        width: 600px;
+        margin-top: 0px;
+    }
+}
+
+/*Tier 5 (Small laptop)*/
+@media screen and (min-width: 960px) and (max-width: 1280px) {
+    .headingSearch {
+        margin: 25px;
+    }
+    .heading {
+        font-size: 55px;
+        width: 800px;
+        margin: 20px;
+        margin-top: 0px;
+
+    }
+}
+
+
+/*Tier 6 (Laptop)*/
+@media screen and (min-width: 1280px) {
+    .headingSearch {
+        margin: 30px;
+    }
+    .heading {
+        font-size: 60px;
+        width: 900px;
+        margin: 20px;
+        margin-top: 0px;
+
+    }
+}

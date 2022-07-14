@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# What to Wear 👕
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hey there, I'm proud to present a website that recommends what you should wear depending on where you are.
 
-## Available Scripts
+## Check It Out 💡 
+- [What to Wear](Deployed website coming soon...) 
 
-In the project directory, you can run:
+## Application Screenshots 📸
+![Home Page](/screenshots/home-page.png)
+![Search Page](/screenshots/search-page.png)
 
-### `npm start`
+## Technology and Tools 🛠
+<p align="left"><a target="_blank" href="https://reactjs.org/"> <img src="https://brandslogos.com/wp-content/uploads/images/large/react-logo-1.png" alt="React Icon" width="40" height="40"/></a> <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript Icon" width="40" height="40"/></a> <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3 Icon" width="40" height="40"/> </a> <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML" > <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5 Icon" width="40" height="40"/></a></p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation Instructions 📲
+To view and suggest edits to this project locally:
+1. Fork and clone this repository
+2. Change into the new directory and create a development branch 
+3. Add and commit suggested edits
+4. Push edits to the remote
+5. Submit a pull request for me to view
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## User Stories 🗣
+As a user, I want to:
+- Search for cities of my choice (case-insensitive)
+- Interact with a snappy webpage and user interface (upon hover, click, etc.)
+- Recieve up-to-date and accurate data based on search
+- Be provided with a reasonable outfit recommendation based on the weather
+- Read through information clearly on all types and sizes of screens
 
-### `npm test`
+## Wireframes 🕸
+![Home Page Wireframe](/planning/wireframes/desktop-home.png)
+![Search Page Wireframe](/planning/wireframes/desktop-view.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Challenges 💪
+Keeping my code organized was a major hurdle because of all of the moving parts in a React project. However, after bucketing my files into folders, it became a lot more managable.
 
-### `npm run build`
+## What's Next 🏁
+This project served as an incredible teacher for learning and applying React. In the future, I will continue to refactor my code to make it DRYer via conditional rendering. In additon, I will apply the fundamentals I practiced for this project to bigger and more complex projects.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Reflection 🙌
+This was a really fun personal project! I applied the fundamentals of building a project on React with the component architecture, how to make API calls, and how can I leverage different JavaScript packages like Typewriter Effect. All in all, I hope you enjoyed my project and know exactly what to wear now!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Connect With Me 👥
+<p align="left">
+<a target="_blank" href="https://www.linkedin.com/in/lance-chin/"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn Icon" height="30" width="40"/></a></p>
