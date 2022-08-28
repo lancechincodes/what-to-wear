@@ -3,7 +3,7 @@
 Hey there, I'm proud to present a website that recommends what you should wear depending on where you are.
 
 ## Check It Out 💡 
-- [What to Wear](Deployed website coming soon...) 
+- [What to Wear](https://what-to-wear-lancechincodes.netlify.app/) 
 
 ## Application Screenshots 📸
 ![Home Page](/screenshots/home-page.png)
@@ -24,19 +24,21 @@ To view and suggest edits to this project locally:
 As a user, I want to:
 - Search for cities of my choice (case-insensitive)
 - Interact with a snappy webpage and user interface (upon hover, click, etc.)
-- Recieve up-to-date and accurate data based on search
+- Receive up-to-date and accurate data based on search
 - Be provided with a reasonable outfit recommendation based on the weather
 - Read through information clearly on all types and sizes of screens
 
-## Wireframes 🕸
-![Home Page Wireframe](/planning/wireframes/desktop-home.png)
-![Search Page Wireframe](/planning/wireframes/desktop-view.png)
+## Mobile Wireframes 📱 🕸
+![Mobile Wireframes](/planning/wireframes/mobile-wireframes.png)
+
+## Desktop Wireframes 🖥 🕸
+![Desktop Wireframes](/planning/wireframes/desktop-wireframes.png)
 
 ## Challenges 💪
-Keeping my code organized was a major hurdle because of all of the moving parts in a React project. However, after bucketing my files into folders, it became a lot more managable.
+Keeping my code organized was a major hurdle because of all of the moving parts in a React project. However, after bucketing my files into folders, it became a lot more manageable.
 
 ## What's Next 🏁
-This project served as an incredible teacher for learning and applying React. In the future, I will continue to refactor my code to make it DRYer via conditional rendering. In additon, I will apply the fundamentals I practiced for this project to bigger and more complex projects.
+This project served as an incredible teacher for learning and applying React. In the future, I will continue to refactor my code to make it DRYer via conditional rendering. In addition, I will apply the fundamentals I practiced for this project to bigger and more complex projects.
 
 ## Reflection 🙌
 This was a really fun personal project! I applied the fundamentals of building a project on React with the component architecture, how to make API calls, and how can I leverage different JavaScript packages like Typewriter Effect. All in all, I hope you enjoyed my project and know exactly what to wear now!
