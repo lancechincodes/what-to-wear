@@ -20,7 +20,7 @@ function App() {
 
   const searchOptions = {
     key: process.env.REACT_APP_WEATHER_KEY,
-    api: "http://api.weatherapi.com/v1/current.json?"
+    api: "https://api.weatherapi.com/v1/current.json?"
   }
 
   const [searchString, setSearchString] = useState("")
