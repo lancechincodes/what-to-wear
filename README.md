@@ -3,7 +3,7 @@
 Hey there, I'm proud to present a website that recommends what you should wear depending on where you are.
 
 ## Check It Out 💡 
-- [What to Wear](Deployed website coming soon...) 
+- [What to Wear](https://what-to-wear-lancechincodes.netlify.app/) 
 
 ## Application Screenshots 📸
 ![Home Page](/screenshots/home-page.png)
