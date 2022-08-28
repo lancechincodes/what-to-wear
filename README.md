@@ -5,9 +5,11 @@ Hey there, I'm proud to present a website that recommends what you should wear d
 ## Check It Out 💡 
 - [What to Wear](https://what-to-wear-lancechincodes.netlify.app/) 
 
-## Application Screenshots 📸
-![Home Page](/screenshots/home-page.png)
-![Search Page](/screenshots/search-page.png)
+## Mobile Screenshots 📱 📸
+![Home Page](/screenshots/mobile-ss.png)
+
+## Desktop Screenshots 🖥 📸
+![Search Page](/screenshots/desktop-ss.png)
 
 ## Technology and Tools 🛠
 <p align="left"><a target="_blank" href="https://reactjs.org/"> <img src="https://brandslogos.com/wp-content/uploads/images/large/react-logo-1.png" alt="React Icon" width="40" height="40"/></a> <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript Icon" width="40" height="40"/></a> <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="CSS3 Icon" width="40" height="40"/> </a> <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML" > <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="HTML5 Icon" width="40" height="40"/></a></p>
